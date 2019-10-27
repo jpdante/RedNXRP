@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<meta>
+  <info name="Init" author="Ellisiumx" type="gamemode" async="true"/>
+  <script src="bin/Debug/netcoreapp2.0/RedNXRP.dll" type="server" lang="compiled"/>
+</meta>
