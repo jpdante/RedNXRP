@@ -17,6 +17,8 @@ namespace RedNXRP {
         [ServerEvent(Event.ResourceStart)]
         public void OnResourceStart() {
             NAPI.Util.ConsoleOutput("[RedNX] Initializing script...");
+            NAPI.Server.SetAutoRespawnAfterDeath(false);
+            NAPI.Server.SetAutoSpawnOnConnect(false);
             var configPath = Path.Combine(Environment.CurrentDirectory, "rednx.json");
             if (!File.Exists(configPath)) {
                 File.WriteAllText(configPath, JsonConvert.SerializeObject(new Config(), Formatting.Indented));
